@@ -28,3 +28,4 @@ function Maria() {
   )
 }
 
+export default MemberOne
