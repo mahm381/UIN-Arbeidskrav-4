@@ -29,3 +29,5 @@ function Masuda() {
     </article>
   )
 }
+
+export default Masuda
