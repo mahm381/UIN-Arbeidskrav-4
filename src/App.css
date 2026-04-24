@@ -33,3 +33,42 @@ body {
   min-height: 100vh;               /* Full høyde */
 }
  
+/* Root container (React app struktur) */
+#root {
+  display: flex;
+  flex-direction: column; /* Stack layout */
+  min-height: 100vh;
+}
+
+/* Main content area */
+main {
+  flex: 1;                     /* Tar opp tilgjengelig plass */
+  max-width: 1200px;          /* Maks bredde */
+  margin: 0 auto;             /* Sentrerer */
+  width: 100%;
+  padding: 3rem 1.5rem;       /* Luft rundt innhold */
+}
+
+/* Seksjonstittel styling */
+.section-title {
+  font-family: var(--font-display); /* Display font */
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;            /* Øker spacing */
+  text-transform: uppercase;        /* Store bokstaver */
+  color: var(--color-accent);       /* Aksentfarge */
+  margin-bottom: 2.5rem;
+}
+
+/* Wrapper for profil-seksjon */
+.profiles-section {
+  margin-bottom: 5rem; /* Avstand til neste seksjon */
+}
+
+/* Grid layout for profiler */
+.profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+  /* Responsiv grid som tilpasser antall kolonner */
+  gap: 2rem; /* Avstand mellom elementer */
+}
