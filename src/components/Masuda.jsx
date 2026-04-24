@@ -22,7 +22,7 @@ function Masuda() {
         <p className="m2-study">{member.study}</p>
         <address 
         className="m2-address">
-          <a href={`mailto:${member.email}`} className="m2-email">
+         <a href={`mailto:${member.email}`} className="m2-email">
             ✉ {member.email}
           </a>
         </address>
