@@ -14,4 +14,11 @@
   --color-muted: #888899;     /* Nedtonet tekst */
   --font-display: 'Syne', sans-serif; /* Overskrifter */
   --font-body: 'DM Sans', sans-serif; /* Brødtekst */
+}  
+
+/* Reset + box model fix */
+*, *::before, *::after {
+  box-sizing: border-box; /* Gjør padding/border enklere å kontrollere */
+  margin: 0;              /* Fjerner default margin */
+  padding: 0;             /* Fjerner default padding */
 }
