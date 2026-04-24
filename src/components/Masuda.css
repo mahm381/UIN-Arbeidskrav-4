@@ -37,6 +37,10 @@
   user-select: none;
 }
 
+.m2-image-wrap {
+  margin: 0;
+}
+
 /* Styling av profilbilde med ramme */
 .m2-image {
   width: 90px;
@@ -68,4 +72,25 @@
   font-size: 0.85rem;
   color: #888899;
   font-weight: 300;
+}
+.m2-address {
+  font-style: normal;
+  margin-top: 0.5rem;
+}
+
+
+.m2-email {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  color: #7b61ff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color 0.2s ease;
+}
+
+.m2-email:hover {
+  color: #a992ff;
+  text-decoration: underline;
 }
