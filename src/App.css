@@ -22,3 +22,14 @@
   margin: 0;              /* Fjerner default margin */
   padding: 0;             /* Fjerner default padding */
 }
+
+/* Body styling */
+body {
+  background-color: var(--color-bg); /* Setter bakgrunn */
+  color: var(--color-text);          /* Tekstfarge */
+  font-family: var(--font-body);     /* Brødtekst font */
+  font-size: 1rem;                  /* Standard fontstørrelse */
+  line-height: 1.6;                 /* Bedre lesbarhet */
+  min-height: 100vh;               /* Full høyde */
+}
+ 
