@@ -2,7 +2,7 @@ import './App.css'
 import Header from './components/Header'
 import MemberOne from './components/Maria'
 import MemberTwo from './components/Masuda'
-import Assignments from './components/Assignments'
+import Assignments from './components/Assigments'
 
 function App() {
   return (
