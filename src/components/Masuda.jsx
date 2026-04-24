@@ -8,7 +8,7 @@ const member = {
   imageAlt: 'Illustrasjon for Masuda',
 }
 
-function MemberTwo() {
+function Masuda() {
   return (
     <article className="member-two">
       <header className="m2-header">

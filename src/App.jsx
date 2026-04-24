@@ -1,7 +1,7 @@
 import './App.css'
 import Header from './components/Header'
-import MemberOne from './components/Maria'
-import MemberTwo from './components/Masuda'
+import Maria from './components/Maria'
+import Masuda from './components/Masuda'
 import Assignments from './components/Assignments'
 
 function App() {
@@ -12,8 +12,8 @@ function App() {
         <section className="profiles-section">
           <h2 className="section-title">Gruppemedlemmer</h2>
           <div className="profiles-grid">
-            <MemberOne />
-            <MemberTwo />
+            <Maria />
+            <Masuda />
           </div>
         </section>
         <Assignments />
