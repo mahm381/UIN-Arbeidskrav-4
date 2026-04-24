@@ -26,3 +26,46 @@
   align-items: flex-start;
   justify-content: space-between;
 }
+
+/* Dekorativt tall (02) med Playfair Display font */
+.m2-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  line-height: 1;
+  font-style: italic;
+  color: rgba(123, 97, 255, 0.25);
+  user-select: none;
+}
+
+/* Styling av profilbilde med ramme */
+.m2-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 16px;
+  border: 2px solid #7b61ff;
+  object-fit: cover;
+  display: block;
+}
+
+/* Innholdsseksjon for tekstinformasjon */
+.m2-body {
+  padding: 1.5rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* Typografi for navn og studiestudie */
+.m2-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f0f0f0;
+}
+
+.m2-study {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  color: #888899;
+  font-weight: 300;
+}
