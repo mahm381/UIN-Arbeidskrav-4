@@ -1,9 +1,9 @@
 import './Masuda.css'
 
 const member = {
-  name: 'Masuda Ahmed',
+  name: 'Masuda Maqsudi',
   email: 'masudam@hiof.no',
-  study: 'Informasjons teknologi – årstuduim',
+  study: 'Informasjons teknologi – årstudium',
   imageUrl: 'https://www.google.com/search?sca_esv=678aa669decbf740&rlz=1C1GCEA_enNO1139NO1139&sxsrf=ANbL-n4RvlMTGebI1lKSvuChR63LWY6jiQ:1777037949859&udm=2&fbs=ADc_l-YGrpJMQtvjQ6h14rj-dfIrbPkd_Upq68wJVnEIgo2PwwKPNlYwsjssCGmh4GdP4oGmzKAsANyV238wnjZYHA6FqOZKlgV37jTcte-EpvsEGq2-bWHtTm1Nmz0IP55JWjkqNqlAFYkcNf9tpoVd5rcAG8giZq3KIPMuViL9UEa4Au36j8ZgZ0Kg9r5sjqw3eNIIP0poLm1G-cL1IVuGhYZ_F7L0qA&q=dory&sa=X&ved=2ahUKEwiUxIOezoaUAxUm0wIHHUVNOrUQtKgLegQIHBAB&biw=1280&bih=551&dpr=1.5#sv=CAMSVhoyKhBlLWFoSFo4YnNRX05mMUpNMg5haEhaOGJzUV9OZjFKTToOajlNWjZENDFibjdIY00gBCocCgZtb3NhaWMSEGUtYWhIWjhic1FfTmYxSk0YADABGAcg6-2V2wNKCBABGAEgASgB',
   imageAlt: 'Illustrasjon for Masuda',
 }
