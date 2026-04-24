@@ -1,0 +1,29 @@
+/* Importerer fonter fra Google Fonts */
+@import url('https://www.google.com/search?q=panda+potrait&sca_esv=d855ddeff0d9d054&udm=2&biw=1035&bih=696&sxsrf=ANbL-n4DolCHB7rihhfyy2PbfgqQ64LNNA%3A1777035743708&ei=32nraZnvKse3i-gP9dmG8Qg&ved=0ahUKEwjZ2oaCxoaUAxXH2wIHHfWsIY4Q4dUDCBI&uact=5&oq=panda+potrait&gs_lp=Egtnd3Mtd2l6LWltZyINcGFuZGEgcG90cmFpdDIJEAAYgAQYChgLMgkQABiABBgKGAsyCRAAGIAEGAoYC0jYD1DCAlj_DHABeACQAQCYAXWgAawEqgEDNi4yuAEDyAEA-AEBmAIJoALTBMICChAAGIAEGIoFGEPCAgYQABgHGB7CAgUQABiABMICBxAAGIAEGArCAgQQABgewgIGEAAYBRgewgIGEAAYCBgemAMAiAYBkgcDNy4yoAf6I7IHAzYuMrgHzgTCBwUwLjQuNcgHHoAIAQ&sclient=gws-wiz-img#sv=CAMSVhoyKhBlLVJFbF9WM1dod2RXT2FNMg5SRWxfVjNXaHdkV09hTToOYlMwSm1zOXcxcFY4VU0gBCocCgZtb3NhaWMSEGUtUkVsX1YzV2h3ZFdPYU0YADABGAcgkZC14ghKCBABGAEgASgB');
+
+/* Hovedkort (container for medlem) */
+.member-one {
+  background: #1a1a22; /* Mørk bakgrunn */
+  border: 2px solid #c8ff00; /* Neon grønn kant */
+  border-radius: 4px; /* Lett avrunding */
+  overflow: hidden; /* Skjuler innhold som går utenfor */
+  display: flex;
+  flex-direction: column; /* Vertikal layout */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover-effekt */
+}
+/* Hover-effekt for kortet */
+.member-one:hover {
+  transform: translateY(-4px); /* Løfter kortet litt opp */
+  box-shadow: 8px 8px 0px #c8ff00; /* Hard shadow for “retro” effekt */
+}
+
+/* === Bilde-wrapper === */
+.m1-image-wrap {
+  margin: 0;
+  background: #0f0f13; /* Mørkere bakgrunn bak bildet */
+  display: flex;
+  align-items: center; /* Sentrerer vertikalt */
+  justify-content: center; /* Sentrerer horisontalt */
+  padding: 2rem;
+  aspect-ratio: 16 / 9; /* Bevarer proporsjoner */
+}
