@@ -57,4 +57,29 @@
   border-radius: 2px;
   width: fit-content; /* Tilpasser seg tekst */
   font-weight: 700;
+}.m1-name {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #f0f0f0;
+  line-height: 1.1;
+}
+ 
+.m1-study {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #888899;
+  font-weight: 300;
+}
+ 
+.m1-email {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  color: #c8ff00;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+ 
+.m1-email:hover {
+  text-decoration: underline;
 }
