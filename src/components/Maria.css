@@ -27,3 +27,34 @@
   padding: 2rem;
   aspect-ratio: 16 / 9; /* Bevarer proporsjoner */
 }
+
+/* Profilbilde */
+.m1-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* Gjør bildet rundt */
+  border: 3px solid #c8ff00; /* Neon kant */
+  object-fit: cover; /* Hindrer strekking */
+}
+
+/* === Innhold === */
+.m1-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Avstand mellom elementer */
+}
+
+/* Badge (rolle/label) */
+.m1-badge {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em; /* Gir “tech” følelse */
+  text-transform: uppercase;
+  background: #c8ff00;
+  color: #0f0f13;
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+  width: fit-content; /* Tilpasser seg tekst */
+  font-weight: 700;
+}
