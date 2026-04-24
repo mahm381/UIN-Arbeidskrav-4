@@ -72,3 +72,12 @@ main {
   /* Responsiv grid som tilpasser antall kolonner */
   gap: 2rem; /* Avstand mellom elementer */
 }
+/* Footer styling */
+footer {
+  border-top: 1px solid var(--color-border); /* Topp linje */
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-muted); /* Nedtonet tekst */
+  font-family: var(--font-body);
+}
