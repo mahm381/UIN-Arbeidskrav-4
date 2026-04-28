@@ -78,7 +78,7 @@
   margin-top: 0.5rem;
 }
 
-
+/* E-postlenke med, farge, ikon og hover effekt */
 .m2-email {
   font-family: 'DM Sans', sans-serif;
   font-size: 0.85rem;
@@ -89,7 +89,7 @@
   gap: 0.3rem;
   transition: color 0.2s ease;
 }
-
+/* Hover effekt på e-postlenken*/
 .m2-email:hover {
   color: #a992ff;
   text-decoration: underline;
