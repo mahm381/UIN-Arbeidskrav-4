@@ -1,6 +1,7 @@
+/* Import Google Fonts for Space Mono and Inter */
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500&display=swap');
 
-/* Helt annerledes enn Masuda - lys bakgrunn, retro/terminal-stil */
+/* Main card container with light background and retro/terminal style */
 .member-one {
   background: #e8ff85;
   border: none;
@@ -13,11 +14,13 @@
   box-shadow: 6px 6px 0px #000000;
 }
 
+/* Hover effect for the card - slight translation and shadow increase */
 .member-one:hover {
   transform: translate(-4px, -4px);
   box-shadow: 10px 10px 0px #000000;
 }
 
+/* Image wrapper with black background and centered layout */
 .m1-image-wrap {
   margin: 0;
   background: #000000;
@@ -28,6 +31,7 @@
   aspect-ratio: 16 / 8;
 }
 
+/* Profile image styling with pixelated rendering */
 .m1-image {
   width: 100px;
   height: 100px;
@@ -37,6 +41,7 @@
   image-rendering: pixelated;
 }
 
+/* Content section with flex layout and background */
 .m1-content {
   padding: 1.5rem;
   display: flex;
@@ -45,6 +50,7 @@
   background: #e8ff85;
 }
 
+/* Badge for group member with monospace font and uppercase text */
 .m1-badge {
   font-family: 'Space Mono', monospace;
   font-size: 0.65rem;
@@ -58,6 +64,7 @@
   font-weight: 700;
 }
 
+/* Name heading with large monospace font */
 .m1-name {
   font-family: 'Space Mono', monospace;
   font-size: 1.6rem;
@@ -66,6 +73,7 @@
   line-height: 1.1;
 }
 
+/* Study information with Inter font and subtle background */
 .m1-study {
   font-family: 'Inter', sans-serif;
   font-size: 0.85rem;
@@ -76,6 +84,7 @@
   width: fit-content;
 }
 
+/* Email link with monospace font and underline effect */
 .m1-email {
   font-family: 'Space Mono', monospace;
   font-size: 0.78rem;
@@ -87,6 +96,7 @@
   transition: opacity 0.2s ease;
 }
 
+/* Hover effect for email link - opacity change */
 .m1-email:hover {
   opacity: 0.6;
 }
