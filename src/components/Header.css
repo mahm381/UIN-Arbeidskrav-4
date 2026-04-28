@@ -1,23 +1,29 @@
+/* Importer Syne-fonten fra Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap');
- 
+
+/* Hovedstil for nettstedets header */
 .site-header {
   position: relative;
   overflow: hidden;
+  /* Gradient bakgrunn fra mørk blå til mørkere grå */
   background: linear-gradient(135deg, #12121a 0%, #1e1e2e 100%);
+  /* Subtil grense under headeren */
   border-bottom: 1px solid #2e2e3a;
   padding: 3.5rem 2rem 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
- 
+
+/* Indre container for header-innhold */
 .header-inner {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
   z-index: 1;
 }
- 
+
+/* Etikett i header - liten tekst over tittelen */
 .header-label {
   font-family: 'Syne', sans-serif;
   font-size: 0.75rem;
@@ -25,7 +31,8 @@
   text-transform: uppercase;
   color: #888899;
 }
- 
+
+/* Hovedtittel med responsiv fontsize */
 .header-title {
   font-family: 'Syne', sans-serif;
   font-size: clamp(2.5rem, 6vw, 5rem);
@@ -33,25 +40,29 @@
   line-height: 1;
   color: #f0f0f0;
 }
- 
+
+/* Gruppe-tekst med fargegradienten */
 .header-group {
   background: linear-gradient(90deg, #c8ff00, #7b61ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
- 
+
+/* Undertekst under tittelen */
 .header-sub {
   font-family: 'DM Sans', sans-serif;
   font-size: 0.9rem;
   color: #888899;
   font-style: italic;
 }
- 
+
+/* Dekorativ tekst i bakgrunnen */
 .header-deco {
   font-family: 'Syne', sans-serif;
   font-size: clamp(4rem, 12vw, 10rem);
   font-weight: 800;
+  /* Halftransparent grønn farge for subtil effekt */
   color: rgba(200, 255, 0, 0.04);
   line-height: 1;
   user-select: none;
