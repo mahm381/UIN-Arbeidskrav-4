@@ -14,7 +14,7 @@ function Maria() {
       <figure className="m1-image-wrap">
         <img src={member.imageUrl} alt={member.imageAlt} className="m1-image" />
       </figure>
-      <div className="m1-content">
+      <section className="m1-content">
         <span className="m1-badge">Gruppemedlem 1</span>
         <h2 className="m1-name">{member.name}</h2>
         <p className="m1-study">{member.study}</p>
@@ -23,7 +23,7 @@ function Maria() {
             {member.email}
           </a>
         </address>
-      </div>
+      </section>
     </article>
   )
 }
