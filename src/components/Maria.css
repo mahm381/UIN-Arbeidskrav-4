@@ -1,85 +1,103 @@
-/* Importerer fonter fra Google Fonts */
-@import url('https://www.google.com/search?q=panda+potrait&sca_esv=d855ddeff0d9d054&udm=2&biw=1035&bih=696&sxsrf=ANbL-n4DolCHB7rihhfyy2PbfgqQ64LNNA%3A1777035743708&ei=32nraZnvKse3i-gP9dmG8Qg&ved=0ahUKEwjZ2oaCxoaUAxXH2wIHHfWsIY4Q4dUDCBI&uact=5&oq=panda+potrait&gs_lp=Egtnd3Mtd2l6LWltZyINcGFuZGEgcG90cmFpdDIJEAAYgAQYChgLMgkQABiABBgKGAsyCRAAGIAEGAoYC0jYD1DCAlj_DHABeACQAQCYAXWgAawEqgEDNi4yuAEDyAEA-AEBmAIJoALTBMICChAAGIAEGIoFGEPCAgYQABgHGB7CAgUQABiABMICBxAAGIAEGArCAgQQABgewgIGEAAYBRgewgIGEAAYCBgemAMAiAYBkgcDNy4yoAf6I7IHAzYuMrgHzgTCBwUwLjQuNcgHHoAIAQ&sclient=gws-wiz-img#sv=CAMSVhoyKhBlLVJFbF9WM1dod2RXT2FNMg5SRWxfVjNXaHdkV09hTToOYlMwSm1zOXcxcFY4VU0gBCocCgZtb3NhaWMSEGUtUkVsX1YzV2h3ZFdPYU0YADABGAcgkZC14ghKCBABGAEgASgB');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400&display=swap');
 
-/* Hovedkort (container for medlem) */
 .member-one {
-  background: #1a1a22; /* Mørk bakgrunn */
-  border: 2px solid #c8ff00; /* Neon grønn kant */
-  border-radius: 4px; /* Lett avrunding */
-  overflow: hidden; /* Skjuler innhold som går utenfor */
-  display: flex;
-  flex-direction: column; /* Vertikal layout */
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover-effekt */
-}
-/* Hover-effekt for kortet */
-.member-one:hover {
-  transform: translateY(-4px); /* Løfter kortet litt opp */
-  box-shadow: 8px 8px 0px #c8ff00; /* Hard shadow for “retro” effekt */
-}
-
-/* === Bilde-wrapper === */
-.m1-image-wrap {
-  margin: 0;
-  background: #0f0f13; /* Mørkere bakgrunn bak bildet */
-  display: flex;
-  align-items: center; /* Sentrerer vertikalt */
-  justify-content: center; /* Sentrerer horisontalt */
-  padding: 2rem;
-  aspect-ratio: 16 / 9; /* Bevarer proporsjoner */
-}
-
-/* Profilbilde */
-.m1-image {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%; /* Gjør bildet rundt */
-  border: 3px solid #c8ff00; /* Neon kant */
-  object-fit: cover; /* Hindrer strekking */
-}
-
-/* === Innhold === */
-.m1-content {
-  padding: 1.5rem;
+  background: #0f0f13;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem; /* Avstand mellom elementer */
+  position: relative;
+  transition: transform 0.3s ease;
 }
 
-/* Badge (rolle/label) */
+/* Fargerik gradient-stripe øverst */
+.member-one::before {
+  content: '';
+  display: block;
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(90deg, #ff6b6b, #ffd93d, #c8ff00, #6bcff6);
+}
+
+.member-one:hover {
+  transform: translateY(-6px);
+}
+
+.m1-image-wrap {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 2rem 1rem 2rem;
+  gap: 1.5rem;
+  flex-direction: row;
+}
+
+.m1-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 12px;
+  border: none;
+  outline: 3px solid #ff6b6b;
+  outline-offset: 3px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.m1-content {
+  padding: 0.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .m1-badge {
   font-family: 'Syne', sans-serif;
   font-size: 0.7rem;
-  letter-spacing: 0.2em; /* Gir “tech” følelse */
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  background: #c8ff00;
-  color: #0f0f13;
+  background: transparent;
+  color: #ff6b6b;
+  border: 1px solid #ff6b6b;
   padding: 0.2rem 0.6rem;
-  border-radius: 2px;
-  width: fit-content; /* Tilpasser seg tekst */
+  border-radius: 20px;
+  width: fit-content;
   font-weight: 700;
-}.m1-name {
+}
+
+.m1-name {
   font-family: 'Syne', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 800;
   color: #f0f0f0;
   line-height: 1.1;
+  margin-top: 0.3rem;
 }
- 
+
 .m1-study {
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: #888899;
   font-weight: 300;
+  padding-left: 0.8rem;
+  border-left: 2px solid #ffd93d;
 }
- 
+
 .m1-email {
   font-family: 'DM Sans', sans-serif;
   font-size: 0.85rem;
-  color: #c8ff00;
+  color: #f0f0f0;
   text-decoration: none;
-  letter-spacing: 0.03em;
+  background: linear-gradient(90deg, #ff6b6b22, transparent);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  width: fit-content;
+  margin-top: 0.3rem;
+  transition: background 0.2s ease;
 }
- 
+
 .m1-email:hover {
-  text-decoration: underline;
+  background: linear-gradient(90deg, #ff6b6b44, transparent);
+  color: #ff6b6b;
 }

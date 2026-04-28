@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap');
+ 
+.site-header {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #12121a 0%, #1e1e2e 100%);
+  border-bottom: 1px solid #2e2e3a;
+  padding: 3.5rem 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ 
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  z-index: 1;
+}
+ 
+.header-label {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #888899;
+}
+ 
+.header-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 800;
+  line-height: 1;
+  color: #f0f0f0;
+}
+ 
+.header-group {
+  background: linear-gradient(90deg, #c8ff00, #7b61ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+ 
+.header-sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #888899;
+  font-style: italic;
+}
+ 
+.header-deco {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(4rem, 12vw, 10rem);
+  font-weight: 800;
+  color: rgba(200, 255, 0, 0.04);
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  letter-spacing: -0.05em;
+}
