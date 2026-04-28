@@ -1,20 +1,32 @@
+/* Reset pseudo-elementer for bedre kontroll over box-sizing */
 ::before,
 ::after {
+  /* Inkluderer padding og border i bredde/høyde-kalkulasjoner */
   box-sizing: border-box;
-margin: 0;
-padding: 0;
+  /* Fjerner default margin */
+  margin: 0;
+  /* Fjerner default padding */
+  padding: 0;
 }
 
+/* Styling for body-elementet */
 body {
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
- }
+  /* Forbedrer font-rendering på WebKit-baserte nettlesere (Chrome, Safari) */
+  -webkit-font-smoothing: antialiased;
+  /* Forbedrer font-rendering på Firefox */
+  -moz-osx-font-smoothing: grayscale;
+}
 
- img {
+/* Styling for bilder */
+img {
+  /* Gjør bilder til blokkelementer for bedre spacing-kontroll */
   display: block;
+  /* Sikrer at bilder ikke blir større enn deres container */
   max-width: 100%;
 }
- 
+
+/* Styling for address-elementet */
 address {
+  /* Fjerner italic-stil som nettlesere gir som default */
   font-style: normal;
 }

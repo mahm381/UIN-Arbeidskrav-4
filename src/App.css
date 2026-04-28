@@ -1,83 +1,122 @@
-/* === GLOBAL STYLES === */
 
-/* Importerer Google Fonts for typografi */
+
+/* Importer Google Fonts for typografi (Syne og DM Sans) */
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 
-/* Definerer CSS variabler (design system) */
+/* Definerer CSS-variabler som brukes gjennom hele designet (design system) */
 :root {
-  --color-bg: #0f0f13;        /* Bakgrunnsfarge */
-  --color-surface: #1a1a22;   /* Kort/overflate farge */
-  --color-border: #2e2e3a;    /* Border farge */
-  --color-accent: #c8ff00;    /* Primær aksent (neon grønn) */
-  --color-accent2: #7b61ff;   /* Sekundær aksent (lilla) */
-  --color-text: #f0f0f0;      /* Hovedtekst */
-  --color-muted: #888899;     /* Nedtonet tekst */
-  --font-display: 'Syne', sans-serif; /* Overskrifter */
-  --font-body: 'DM Sans', sans-serif; /* Brødtekst */
-}  
+  /* Bakgrunnsfarge - mørk blå/grå */
+  --color-bg: #0f0f13;
+  /* Kort- og overflatefarge for elementer */
+  --color-surface: #1a1a22;
+  /* Border og linjer farge */
+  --color-border: #2e2e3a;
+  /* Primær aksentfarge - neon grønn */
+  --color-accent: #c8ff00;
+  /* Sekundær aksentfarge - lilla */
+  --color-accent2: #7b61ff;
+  /* Hovedtekstfarge - lys grå */
+  --color-text: #f0f0f0;
+  /* Nedtonet tekst for sekundær informasjon */
+  --color-muted: #888899;
+  /* Display font for overskrifter */
+  --font-display: 'Syne', sans-serif;
+  /* Body font for brødtekst */
+  --font-body: 'DM Sans', sans-serif;
+}
 
-/* Reset + box model fix */
+/* Reset og box-model normalisering for alle elementer */
 *, *::before, *::after {
-  box-sizing: border-box; /* Gjør padding/border enklere å kontrollere */
-  margin: 0;              /* Fjerner default margin */
-  padding: 0;             /* Fjerner default padding */
+  /* Gjør padding og border enklere å håndtere */
+  box-sizing: border-box;
+  /* Fjerner default margin fra nettleser */
+  margin: 0;
+  /* Fjerner default padding fra nettleser */
+  padding: 0;
 }
 
-/* Body styling */
+/* Styling for body-elementet */
 body {
-  background-color: var(--color-bg); /* Setter bakgrunn */
-  color: var(--color-text);          /* Tekstfarge */
-  font-family: var(--font-body);     /* Brødtekst font */
-  font-size: 1rem;                  /* Standard fontstørrelse */
-  line-height: 1.6;                 /* Bedre lesbarhet */
-  min-height: 100vh;               /* Full høyde */
-}
- 
-/* Root container (React app struktur) */
-#root {
-  display: flex;
-  flex-direction: column; /* Stack layout */
+  /* Setter bakgrunnsfarge fra CSS-variabel */
+  background-color: var(--color-bg);
+  /* Setter tekstfarge fra CSS-variabel */
+  color: var(--color-text);
+  /* Bruker body font for all tekst */
+  font-family: var(--font-body);
+  /* Standard fontstørrelse */
+  font-size: 1rem;
+  /* Høy line-height for bedre lesbarhet */
+  line-height: 1.6;
+  /* Sikrer at siden fyller hele viewport */
   min-height: 100vh;
 }
 
-/* Main content area */
-main {
-  flex: 1;                     /* Tar opp tilgjengelig plass */
-  max-width: 1200px;          /* Maks bredde */
-  margin: 0 auto;             /* Sentrerer */
-  width: 100%;
-  padding: 3rem 1.5rem;       /* Luft rundt innhold */
+/* Root container som React mount-punktet på */
+#root {
+  display: flex;
+  /* Stacker elementer vertikalt */
+  flex-direction: column;
+  /* Full høyde for layout */
+  min-height: 100vh;
 }
 
-/* Seksjonstittel styling */
+/* Styling for hovedinnholdsområdet */
+main {
+  /* Tar opp all tilgjengelig plass etter header */
+  flex: 1;
+  /* Maksimal bredde for bedre lesbarhet */
+  max-width: 1200px;
+  /* Sentrerer innholdet horisontalt */
+  margin: 0 auto;
+  /* Full bredde innenfor maks-bredde */
+  width: 100%;
+  /* Padding rundt innholdet */
+  padding: 3rem 1.5rem;
+}
+
+/* Styling for seksjonstitler gjennom hele siden */
 .section-title {
-  font-family: var(--font-display); /* Display font */
+  /* Bruker display font for kontrast */
+  font-family: var(--font-display);
   font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 0.2em;            /* Øker spacing */
-  text-transform: uppercase;        /* Store bokstaver */
-  color: var(--color-accent);       /* Aksentfarge */
+  /* Øker bokstavavstand for visuell effekt */
+  letter-spacing: 0.2em;
+  /* Konverterer til store bokstaver */
+  text-transform: uppercase;
+  /* Primær aksentfarge */
+  color: var(--color-accent);
+  /* Avstand under tittelen */
   margin-bottom: 2.5rem;
 }
 
-/* Wrapper for profil-seksjon */
+/* Container for profil-seksjonen */
 .profiles-section {
-  margin-bottom: 5rem; /* Avstand til neste seksjon */
+  /* Stor avstand til neste seksjon */
+  margin-bottom: 5rem;
 }
 
-/* Grid layout for profiler */
+/* Grid layout for profil-kortene */
 .profiles-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
-  /* Responsiv grid som tilpasser antall kolonner */
-  gap: 2rem; /* Avstand mellom elementer */
+  /* Responsiv grid som automatisk tilpasser antall kolonner basert på skjermbredde */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  /* Avstand mellom grid-elementer */
+  gap: 2rem;
 }
-/* Footer styling */
+
+/* Footer-styling for siden */
 footer {
-  border-top: 1px solid var(--color-border); /* Topp linje */
+  /* Border på toppen av footeren */
+  border-top: 1px solid var(--color-border);
+  /* Innvendig luft */
   padding: 1.5rem;
+  /* Sentrerer tekst */
   text-align: center;
+  /* Mindre fontstørrelse for footer */
   font-size: 0.85rem;
-  color: var(--color-muted); /* Nedtonet tekst */
+  /* Nedtonet farge for sekundær informasjon */
+  color: var(--color-muted);
+  /* Bruker body font */
   font-family: var(--font-body);
 }
