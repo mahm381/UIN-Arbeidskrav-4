@@ -11,10 +11,10 @@ function App() {
       <main>
         <section className="profiles-section">
           <h2 className="section-title">Gruppemedlemmer</h2>
-          <div className="profiles-grid">
+          <section className="profiles-grid">
             <Maria />
             <Masuda />
-          </div>
+          </section>
         </section>
         <Assignments />
       </main>
