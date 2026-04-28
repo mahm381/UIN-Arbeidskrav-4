@@ -1,9 +1,12 @@
+/* Importer Syne-fonten (bold) og DM Sans-fonten (light/regular) fra Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400&display=swap');
 
+/* Hovedkontainer for assignments-seksjonen med top-padding */
 .assignments-section {
   padding-top: 2rem;
 }
 
+/* Stilisering for både loading- og error-meldinger */
 .assignments-loading,
 .assignments-error {
   font-family: 'DM Sans', sans-serif;
@@ -12,15 +15,19 @@
   padding: 1rem 0;
 }
 
+/* Spesifikk stilisering for feilmeldinger med rødt tema */
 .assignments-error {
   color: #ff6b6b;
+  /* Halvtransparent rødt bakgrunnsfelt */
   background: rgba(255, 107, 107, 0.08);
   padding: 0.75rem 1rem;
   border-radius: 6px;
+  /* Rød linje på venstre side av feilmeldingen */
   border-left: 3px solid #ff6b6b;
   margin-bottom: 1.5rem;
 }
 
+/* Nummerert liste med vertikalt layout */
 .assignments-list {
   list-style: none;
   display: flex;
@@ -28,6 +35,7 @@
   gap: 1rem;
 }
 
+/* Enkelt arbeidskrav-item med hover-effekter */
 .assignment-item {
   display: flex;
   gap: 1.5rem;
@@ -36,30 +44,38 @@
   border: 1px solid #2e2e3a;
   border-radius: 10px;
   padding: 1.5rem;
+  /* Smooth overganger for kant- og posisjonsendringer */
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
+/* Hover-effekt som endrer kantfarge og skjover item til høyre */
 .assignment-item:hover {
   border-color: #7b61ff;
   transform: translateX(4px);
 }
 
+/* Nummerstil for arbeidskrav - stor tekst på venstre side */
 .assignment-number {
   font-family: 'Syne', sans-serif;
   font-size: 1.8rem;
   font-weight: 800;
+  /* Halftransparent grønn farge for subtil effekt */
   color: rgba(200, 255, 0, 0.15);
   line-height: 1;
+  /* Fast bredde slik at tall stiller seg opp */
   min-width: 2.5rem;
+  /* Forhindrer at nummeret blir komprimert */
   flex-shrink: 0;
 }
 
+/* Innholdskontainer for tittel og beskrivelse */
 .assignment-body {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
 }
 
+/* Tittel på arbeidskravet */
 .assignment-title {
   font-family: 'Syne', sans-serif;
   font-size: 1.1rem;
@@ -67,10 +83,12 @@
   color: #f0f0f0;
 }
 
+/* Beskrivelse av arbeidskravet */
 .assignment-desc {
   font-family: 'DM Sans', sans-serif;
   font-size: 0.9rem;
   color: #888899;
   font-weight: 300;
+  /* Større line-height for bedre lesbarhet */
   line-height: 1.6;
 }
